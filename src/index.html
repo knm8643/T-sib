@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div id="mainLogin">
+        <div id="main_body">
+            <div v-if="loging">
+                <div id="main_header">
+                    <h1>
+                        <img src="backgroundimg/logo_cyworld.svg">
+                    </h1>
+                </div>
+                <div id="main_middle" v-if="loging">
+                    <h2 id="middle_text_01">ㄷr시 만나서 반ㄱr워!</h2>
+                    <p id="middle_text_02">새롭게 쌓이는 추억, 우리 함께 만들어요.</p>
+                    <div id="middle_box">
+                        <span id="middle_box_login" href="" @click="login()">로그인 바로가기</span>
+                    </div>
+                    <span @click="login()" id="middle_text_03">싸이월드 미니홈피 시작하기&nbsp;<img src="backgroundimg/bullet_new.svg"></span>
+                </div>
+                <div id="main_footer">
+                    <img id="main_footer_img" src="backgroundimg/landing2_bottom_circle.png">
+                </div>
+            </div>
+            <div v-else>
+                 로그인 박스는 다음시간에 :> 
+            </div>
+        </div>
+    </div>
+</body>
+ <script>
+     var mainLogin = Vue.createApp({
+         data() {
+             return {
+                 loging : true,
+             }
+         },
+         methods:{
+            login(){
+                $this = this;
+                this.loging = false;
+            }
+         }
+     })
+     .mount('#mainLogin')
+ </script>
+ <style>
+    *{
+        box-sizing: border-box;
+    }
+
+     /*------------------ 로그인 전 css ------------------ */
+     /*메인배경*/
+     #mainLogin{
+         width:100%;
+         margin:auto;
+         margin-bottom: 13px;
+         position: relative;
+         background-color: #F6F6F6;
+         color: rgba(0, 0, 0, 0.87);
+     }
+     /* 메인프레임 head */
+
+
+     /*메인프레임 Body*/
+     #main_body{
+         width: 378px;
+         margin: auto;
+         padding-top: 111.1px;
+         /* padding-bottom: 121.8px; */
+     }
+
+     /* 메인프레임 middle */
+     /* 미들문구 */
+     #middle_text_01{
+        font-family: 'DungGeunMo',sans-serif; /*추후 폰트 변경 필요 */
+        font-size: 36px;
+        line-height: 42px;
+        color: #129FCE;
+        font-weight: 300;
+     }
+     #middle_text_02{
+        margin-bottom: auto;
+     }
+
+     #middle_box{
+        margin-top: 30.24px;
+        margin-bottom: 23.09px;
+     }
+
+     #middle_box_login{
+        letter-spacing: -.2px;
+        line-height: 24px;
+        font-weight: 500;
+        font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif; /*추후 폰트 변경 필요 */
+        color: #F6F6F6;
+        background-color: black;
+        padding: 8px 20px 10px;
+        margin: 8px 8px 0 0;
+        border-radius: 15px;
+        text-decoration: none;
+     }
+     #middle_box_login:hover{
+        cursor: pointer;
+     }
+
+     #middle_text_03{
+        margin-bottom: auto;
+        font-size: 13px;
+        line-height: 15px;
+        color: #333333;
+        font-weight: 300;
+        padding-right: 18.27px;
+     }
+     
+     #middle_text_03:hover{
+        cursor: pointer;
+     }
+
+     /* 메인프레임 footer */
+     #main_footer{
+        width: 700px;
+        height: 255.08px;
+        bottom: 0;
+        overflow: hidden;
+     }
+
+     /*------------------ 로그인 후 css ------------------ */
+
+     #login_box{
+
+     }
+
+ </style>
+</html>

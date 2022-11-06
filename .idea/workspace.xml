@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f2238e-64b0-4ec3-9d29-8834f029941b" name="Changes" comment="springBuild">
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/index.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/bullet_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_bottom_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backgroundimg/logo_cyworld.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/index.css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javascript/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +46,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ichungjae/git/T-sib/build.gradle",
+    "last_opened_file_path": "/Users/ichungjae/git/T-sib/src/backgroundimg",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/backgroundimg" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +77,12 @@
       <workItem from="1664275707875" duration="15000" />
       <workItem from="1666609911818" duration="661000" />
       <workItem from="1666610676406" duration="9000" />
-      <workItem from="1666611223093" duration="406000" />
+      <workItem from="1666611223093" duration="3779000" />
+      <workItem from="1666615029288" duration="1049000" />
+      <workItem from="1666616115560" duration="100000" />
+      <workItem from="1666616219429" duration="222000" />
+      <workItem from="1666616464844" duration="886000" />
+      <workItem from="1667474509688" duration="7353000" />
     </task>
     <task id="LOCAL-00001" summary="테스트">
       <created>1664275681060</created>
@@ -82,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666611467419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="springBuild">
+      <created>1666611736481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666611736481</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
