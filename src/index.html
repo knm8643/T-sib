@@ -11,8 +11,11 @@
     <div id="main_body">
         <div v-if="loging">
             <div id="main_header">
+                <div>
+                    <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
+                </div>
                 <h1>
-                    <img src="backgroundimg/logo_cyworld.svg">
+                    <img id="main_headerlog" src="backgroundimg/logo_cyworld.svg" onClick="window.location.reload()">
                 </h1>
             </div>
             <div id="main_middle">
@@ -30,8 +33,11 @@
         </div>
         <div v-else>
             <div id="main_header_02">
-                <h1>
-                    <img src="backgroundimg/logo_cyworld.svg">
+                <div>
+                    <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
+                </div>
+                <h1 id="main_headerlog">
+                    <img src="backgroundimg/logo_cyworld.svg" onClick="window.location.reload()">
                 </h1>
             </div>
             <div id="main_middle_02">
@@ -41,16 +47,14 @@
                         <img id="main_header_03_img" src="backgroundimg/landing2_gif4.gif">
                     </div>
                     <div>
-                        <input type="text">
+                        <li><span><input v-model="userId" id="userIdsend" type="text" placeholder="아이디"></span></li>
+                        <li><span><input v-model="userPw" id="userPwsend" type="text" placeholder="비밀번호"></span></li>
                     </div>
                     <div>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <button>클릭</button>
+                        <button @click="sendMemberInfo()" id="submitMember">클릭</button>
                     </div>
                     <div id="main_middle_text_02">
-                        <span>정보를 잊어버리셨나요?&nbsp;<a>&nbsp;아이디 / 비밀번호 찾기</a></span>
+                        <span>정보를 잊어버리셨나요?&nbsp;<a @click="searchMemberIdPw" id="searchMember">&nbsp;아이디 / 비밀번호 찾기</a></span>
                     </div>
                 </div>
             </div>
@@ -70,6 +74,8 @@
             return {
                 loging: true,
                 deviceType: '',
+                userId:'',
+                userPw:'',
             }
         },
         methods: {
@@ -77,8 +83,27 @@
                 var $this = this;
                 if(deviceType == 'app'){
                     alert('app 미구현');
+                    return
                 }
                 $this.loging = false;
+            },
+
+            sendMemberInfo(){
+                var $this = this;
+                if($this.userId == '' || $this.userId == undefined){
+                    alert("아이디를 입력해주세요.");
+                    return
+                }
+                if($this.userPw == '' || $this.userPw == undefined) {
+                    alert("비밀번호를 입력해주세요.");
+                    return
+                }
+                console.log($this.userId, $this.userPw);
+            },
+
+            searchMemberIdPw(){
+                var $this = this;
+                alert("회원정보찾기 미구현");
             }
         }
     }).mount('#mainLogin')
@@ -88,6 +113,9 @@
         box-sizing: border-box;
     }
 
+    li{
+        list-style-type: none;
+    }
     /*------------------ 로그인 전 css ------------------ */
     /*메인배경*/
     #mainLogin {
@@ -101,12 +129,23 @@
     }
 
     /* 메인프레임 head */
+    #main_headerImg{
+        width: 600px;
+        height: 270px;
+        position: relative;
+        top: 0;
+        left: 400px;
+    }
+
+    #main_headerlog:hover{
+        cursor: pointer;
+    }
 
     /*메인프레임 Body*/
     #main_body {
         width: 378px;
         margin: auto;
-        padding-top: 111.1px;
+        /*padding-top: 111.1px;*/
         /* padding-bottom: 121.8px; */
     }
 
@@ -236,12 +275,16 @@
     }
 
     #main_middle_text_02{
-        margin-top: 12px;
+        margin-top: 16px;
         font-size: 13px;
         line-height: 15px;
         color: #333333;
         font-weight: 300;
         padding-right: 18.27px;
+    }
+
+    #searchMember:hover{
+        cursor: pointer;
     }
 
     /*로그인 클릭 후 footer */
@@ -250,6 +293,34 @@
         height: 255.08px;
         bottom: 0;
         overflow: hidden;
+    }
+    #userIdsend{
+        font-size: 13px;
+        line-height: 32px;
+        height: 37px;
+        width: 100%;
+    }
+
+    #userPwsend{
+        font-size: 13px;
+        line-height: 32px;
+        height: 37px;
+        width: 100%;
+    }
+
+    #submitMember{
+        margin-top: 10px;
+        border-color: #f33f46;
+        background:#f33f46;
+        color:#fff;
+        font-size: 13px;
+        line-height: 32px;
+        height: 37px;
+        width: 100%;
+    }
+
+    #submitMember:hover{
+        cursor: pointer;
     }
 </style>
 </html>
