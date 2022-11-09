@@ -2,74 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index.html</title>
+    <title>index</title>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-<div id="mainLogin">
-    <div id="main_body">
-        <div v-if="loging">
-            <div id="main_header">
-                <div>
-                    <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
+    <div id="mainLogin">
+        <div id="main_body">
+            <div v-if="loging">
+                <div id="main_header">
+                    <div>
+                        <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
+                    </div>
+                    <h1>
+                        <img id="main_headerlog" src="backgroundimg/logo_cyworld.svg"
+                             onClick="window.location.reload()">
+                    </h1>
                 </div>
-                <h1>
-                    <img id="main_headerlog" src="backgroundimg/logo_cyworld.svg" onClick="window.location.reload()">
-                </h1>
-            </div>
-            <div id="main_middle">
-                <h2 id="middle_text_01">ㄷr시 만나서 반ㄱr워!</h2>
-                <p id="middle_text_02">새롭게 쌓이는 추억, 우리 함께 만들어요.</p>
-                <div id="middle_box">
-                    <span id="middle_box_login" href="" @click="login('window')">Window</span>
-                    <span><img id="middle_box_app" @click="login('app')" src="backgroundimg/app%20store@3x.png"></span>
+                <div id="main_middle">
+                    <h2 id="middle_text_01">ㄷr시 만나서 반ㄱr워!</h2>
+                    <p id="middle_text_02">새롭게 쌓이는 추억, 우리 함께 만들어요.</p>
+                    <div id="middle_box">
+                        <span id="middle_box_login" href="" @click="login('window')">Window</span>
+                        <span><img id="middle_box_app" @click="login('app')"
+                                   src="backgroundimg/app%20store@3x.png"></span>
+                    </div>
+                    <span @click="login('window')" id="middle_text_03">싸이월드 미니홈피 시작하기&nbsp;<img
+                            src="backgroundimg/bullet_new.svg"></span>
                 </div>
-                <span @click="login('window')" id="middle_text_03">싸이월드 미니홈피 시작하기&nbsp;<img src="backgroundimg/bullet_new.svg"></span>
+                <div id="main_footer">
+                    <img id="main_footer_img" src="backgroundimg/landing2_bottom_circle.png">
+                </div>
             </div>
-            <div id="main_footer">
-                <img id="main_footer_img" src="backgroundimg/landing2_bottom_circle.png">
+            <div v-else>
+                <div id="main_header_02">
+                    <div>
+                        <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
+                    </div>
+                    <h1 id="main_headerlog">
+                        <img src="backgroundimg/logo_cyworld.svg" onClick="window.location.reload()">
+                    </h1>
+                </div>
+                <div id="main_middle_02">
+                    <div id="main_middle_02_box">
+                        <div id="main_header_img_box">
+                            <img id="main_header_02_img" src="backgroundimg/landing2_gif3.gif">
+                            <img id="main_header_03_img" src="backgroundimg/landing2_gif4.gif">
+                        </div>
+                        <div>
+                            <li><span><input v-model="userId" id="userIdsend" type="text" placeholder="아이디"></span></li>
+                            <li><span><input v-model="userPw" id="userPwsend" type="text" placeholder="비밀번호"></span>
+                            </li>
+                        </div>
+                        <div>
+                            <button @click="sendMemberInfo()" id="submitMember">클릭</button>
+                        </div>
+                        <div id="main_middle_text_02">
+                            <span>정보를 잊어버리셨나요?&nbsp;<a @click="searchMemberIdPw"
+                                                       id="searchMember">&nbsp;아이디 / 비밀번호 찾기</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_footer_02">
+                    <img id="main_footer_img_02" src="backgroundimg/landing2_bottom_circle.png">
+                </div>
             </div>
         </div>
-        <div v-else>
-            <div id="main_header_02">
-                <div>
-                    <img id="main_headerImg" src="backgroundimg/landing2_top_circle.png">
-                </div>
-                <h1 id="main_headerlog">
-                    <img src="backgroundimg/logo_cyworld.svg" onClick="window.location.reload()">
-                </h1>
-            </div>
-            <div id="main_middle_02">
-                <div id="main_middle_02_box">
-                    <div id="main_header_img_box">
-                        <img id="main_header_02_img" src="backgroundimg/landing2_gif3.gif">
-                        <img id="main_header_03_img" src="backgroundimg/landing2_gif4.gif">
-                    </div>
-                    <div>
-                        <li><span><input v-model="userId" id="userIdsend" type="text" placeholder="아이디"></span></li>
-                        <li><span><input v-model="userPw" id="userPwsend" type="text" placeholder="비밀번호"></span></li>
-                    </div>
-                    <div>
-                        <button @click="sendMemberInfo()" id="submitMember">클릭</button>
-                    </div>
-                    <div id="main_middle_text_02">
-                        <span>정보를 잊어버리셨나요?&nbsp;<a @click="searchMemberIdPw" id="searchMember">&nbsp;아이디 / 비밀번호 찾기</a></span>
-                    </div>
-                </div>
-            </div>
-            <div id="main_footer_02">
-                <img id="main_footer_img_02" src="backgroundimg/landing2_bottom_circle.png">
-            </div>
+        <div id="main_body_footer">
+            <!-- 제작자 소개 구간 -->
         </div>
     </div>
-    <div id="main_body_footer">
-        <!-- 제작자 소개 구간 -->
-    </div>
-</div>
 </body>
 <script>
     var mainLogin = Vue.createApp({
+        el: "#mainLogin",
         data() {
             return {
                 loging: true,
@@ -103,6 +109,8 @@
 
             searchMemberIdPw(){
                 var $this = this;
+                // mainLogin.component("modal").initPage();
+                modal.initPage();
                 alert("회원정보찾기 미구현");
             }
         }

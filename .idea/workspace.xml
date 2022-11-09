@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7f2238e-64b0-4ec3-9d29-8834f029941b" name="Changes" comment="springBuild">
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/bullet_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_bottom_circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/landing2_gif4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backgroundimg/logo_cyworld.svg" afterDir="false" />
+    <list default="true" id="e7f2238e-64b0-4ec3-9d29-8834f029941b" name="Changes" comment="로그인 페이지 생성, vue3 적용, 제이쿼리cdn추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/index.css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javascript/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ichungjae/git/T-sib/src/backgroundimg",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ichungjae/git/T-sib/src/backgroundimg&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/backgroundimg" />
