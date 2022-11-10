@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+/*------------------ 로그인 전 css ------------------ */
+/*메인배경*/
+#mainLogin {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 13px;
+    position: relative;
+    background-color: #F6F6F6;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* 메인프레임 head */
+#main_headerImg{
+    width: 600px;
+    height: 270px;
+    position: relative;
+    top: 0;
+    left: 400px;
+}
+
+#main_headerlog:hover{
+    cursor: pointer;
+}
+
+/*메인프레임 Body*/
+#main_body {
+    width: 378px;
+    margin: auto;
+    /*padding-top: 111.1px;*/
+    /* padding-bottom: 121.8px; */
+}
+
+/*메인프레임 BodyFooter*/
+#main_body_footer {
+    width: 378px;
+    margin: auto;
+    padding-top: 111.1px;
+}
+
+/* 메인프레임 middle */
+/* 미들문구 */
+#middle_text_01 {
+    font-family: 'DungGeunMo', sans-serif; /*추후 폰트 변경 필요 */
+    font-size: 36px;
+    line-height: 42px;
+    color: #129FCE;
+    font-weight: 300;
+}
+
+#middle_text_02 {
+    margin-bottom: auto;
+}
+
+#middle_box {
+    margin-top: 40.24px;
+    margin-bottom: 33.09px;
+}
+
+#middle_box_login {
+    letter-spacing: -.2px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif; /*추후 폰트 변경 필요 */
+    color: #F6F6F6;
+    background-color: black;
+    padding: 4.6px 20px 9px;
+    margin: 8px 8px 0 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#middle_box_login:hover {
+    cursor: pointer;
+}
+
+#middle_box_app{
+    width: 110px;
+    height: 35px;
+    object-fit: scale-down;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#middle_box_app:hover{
+    cursor: pointer;
+}
+
+#middle_text_03 {
+    margin-bottom: auto;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+    font-weight: 300;
+    padding-right: 18.27px;
+}
+
+#middle_text_03:hover {
+    cursor: pointer;
+}
+
+/* 메인프레임 footer */
+#main_footer {
+    width: 700px;
+    height: 255.08px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/*------------------ 로그인 후 css ------------------ */
+/*로그인 클릭 후 header*/
+#main_header_02 {
+    text-align: center;
+}
+
+/*로그인 클릭 후 BODY*/
+#main_header_img_box{
+    background-image: url("../backgroundimg/cyworldback.jpg");
+    border: 0.5px solid black;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+#main_header_02_img{
+    margin-top: 65px;
+    width: 65px;
+    height: 75px;
+    object-fit: scale-down;
+    display:inline-block;
+    vertical-align: middle;
+}
+#main_header_03_img{
+    margin-top: 90px;
+    width: 65px;
+    height: 80px;
+    object-fit: scale-down;
+    display:inline-block;
+    vertical-align: middle;
+}
+#main_middle_text_01{
+    font-family: 'DungGeunMo', sans-serif; /*추후 폰트 변경 필요 */
+    font-size: 36px;
+    line-height: 42px;
+    color: #129FCE;
+    font-weight: 300;
+}
+
+#main_middle_02 {
+    text-align: center;
+    /*border: 0.5px solid black;*/
+    /*border-radius: 400px;*/
+}
+
+#main_middle_02_box{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#main_middle_text_02{
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+    font-weight: 300;
+    padding-right: 18.27px;
+}
+
+#searchMember:hover{
+    cursor: pointer;
+}
+
+/*로그인 클릭 후 footer */
+#main_footer_02 {
+    width: 700px;
+    height: 255.08px;
+    bottom: 0;
+    overflow: hidden;
+}
+#userIdsend{
+    font-size: 13px;
+    line-height: 32px;
+    height: 37px;
+    width: 100%;
+}
+
+#userPwsend{
+    font-size: 13px;
+    line-height: 32px;
+    height: 37px;
+    width: 100%;
+}
+
+#submitMember{
+    margin-top: 10px;
+    border-color: #f33f46;
+    background:#f33f46;
+    color:#fff;
+    font-size: 13px;
+    line-height: 32px;
+    height: 37px;
+    width: 100%;
+}
+
+#submitMember:hover{
+    cursor: pointer;
+}
