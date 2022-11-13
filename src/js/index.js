@@ -1,7 +1,3 @@
-function sibal(){
-    alert('여기가 눌리면 안된다.');
-}
-
 var mainLogin = Vue.createApp({
     el: "#mainLogin",
     data() {
@@ -48,8 +44,46 @@ var mainLogin = Vue.createApp({
         },
 
         closeModal() {
-            alert('상식적으로 이게 작동해야지');
-        }
+            $("#modal").hide();
+        },
+
+        readPop() {
+            const modaltitle = document.getElementById("modal_title");
+            const modalPopMove = document.querySelector(".modal-window");
+            var flag = true;
+
+            // modaltitle.addEventListener("mouseup", (b) => {
+            //     console.log('1')
+            //     var mouseX = b.clientX;
+            //     var mouseY = b.clientY;
+            //     modalPopMove.style.left = (mouseX - 120) + 'px';
+            //     modalPopMove.style.top = (mouseY - 30) + 'px';
+            //     modalPopMove.style.position = 'absolute';
+            //     flag = false;
+            // }, {once: true});
+
+            // document.addEventListener("mouseup", (b) => {
+            //     console.log('1')
+            //     var mouseX = b.clientX;
+            //     var mouseY = b.clientY;
+            //     modalPopMove.style.left = (mouseX - 120) + 'px';
+            //     modalPopMove.style.top = (mouseY - 30) + 'px';
+            //     modalPopMove.style.position = 'absolute';
+            //     flag = false;
+            // }, {once:true});
+
+
+            // if(flag) {
+            //     console.log('2')
+            // modaltitle.addEventListener("mousemove", (e) => {
+            //         var mouseX = e.clientX;
+            //         var mouseY = e.clientY;
+            //         modalPopMove.style.left = (mouseX - 120) + 'px';
+            //         modalPopMove.style.top = (mouseY - 30) + 'px';
+            //         modalPopMove.style.position = 'absolute';
+            //     });
+            // }
+        },
     }
 }).mount('#mainLogin')
 

@@ -12,12 +12,12 @@
 <script src="https://unpkg.com/vue@3"></script>
 <div id="modal" class="modal-overlay">
     <div class="modal-window">
-        <div class="title">
+        <div class="title" id="modal_title" onmousedown="mainLogin.readPop()">
             <h2>모달</h2>
         </div>
-        <div class="close-area"><span @click="closeModal" onclick="sibal()">X</span></div>
+        <div class="close-area"><span onclick="mainLogin.closeModal()">X</span></div>
         <div class="content">
-            <p>위치확인</p>
+            <p>영찬씨 홈페이지는 이런식으로 만들자</p>
         </div>
     </div>
 </div>
