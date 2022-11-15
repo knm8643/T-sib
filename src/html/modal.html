@@ -13,12 +13,19 @@
 <div id="modal" class="modal-overlay">
     <div class="modal-window">
         <div class="title" id="modal_title" onmousedown="mainLogin.readPop()">
-            <h2>모달</h2>
+            <h2>회원가입</h2>
         </div>
         <div class="close-area"><span onclick="mainLogin.closeModal()">X</span></div>
-        <div class="content">
-            <p>영찬씨 홈페이지는 이런식으로 만들자</p>
-        </div>
+        <form id="memberSendInfo" action="/member" method="post">
+            <div class="content">
+                <p><input type="text" name="privateName" placeholder="성함"></p>
+                <p><input type="text" name="company" placeholder="개인/회사"></p>
+                <p><input type="text" name="privateEmail" placeholder="이메일"></p>
+                <p><input type="text" name="privateBirt" placeholder="이메일"></p>
+                <p>메인 디자인 형식은 만들었으니까</p>
+                <p>이제 팝업안은 형식상으로 만들게</p>
+            </div>
+        </form>
     </div>
 </div>
 

@@ -52,16 +52,6 @@ var mainLogin = Vue.createApp({
             const modalPopMove = document.querySelector(".modal-window");
             var flag = true;
 
-            // modaltitle.addEventListener("mouseup", (b) => {
-            //     console.log('1')
-            //     var mouseX = b.clientX;
-            //     var mouseY = b.clientY;
-            //     modalPopMove.style.left = (mouseX - 120) + 'px';
-            //     modalPopMove.style.top = (mouseY - 30) + 'px';
-            //     modalPopMove.style.position = 'absolute';
-            //     flag = false;
-            // }, {once: true});
-
             // document.addEventListener("mouseup", (b) => {
             //     console.log('1')
             //     var mouseX = b.clientX;

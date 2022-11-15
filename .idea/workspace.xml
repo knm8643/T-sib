@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7f2238e-64b0-4ec3-9d29-8834f029941b" name="Changes" comment="modal팝업창 초초초초초안(ps:귀찮네)">
+    <list default="true" id="e7f2238e-64b0-4ec3-9d29-8834f029941b" name="Changes" comment="modal팝업창 초안(ps:모달어렵네) 이제 서버 구현하자">
+      <change afterPath="$PROJECT_DIR$/src/member/dto/memberInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/member/memberInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
@@ -18,6 +21,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="package-info" />
+        <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ichungjae/git/T-sib/src/backgroundimg&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ichungjae/git/T-sib/src/backgroundimg",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/backgroundimg" />
@@ -58,6 +64,20 @@
       <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="T-sib" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +100,9 @@
       <workItem from="1666616464844" duration="886000" />
       <workItem from="1667474509688" duration="7353000" />
       <workItem from="1668075170964" duration="3340000" />
-      <workItem from="1668335620711" duration="846000" />
+      <workItem from="1668335620711" duration="1019000" />
+      <workItem from="1668506415079" duration="1005000" />
+      <workItem from="1668507494884" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="테스트">
       <created>1664275681060</created>
@@ -117,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668078321789</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modal팝업창 초안(ps:모달어렵네) 이제 서버 구현하자">
+      <created>1668336559743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668336559743</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +168,7 @@
     <MESSAGE value="springBuild" />
     <MESSAGE value="modal팝업창 테스트" />
     <MESSAGE value="modal팝업창 초초초초초안(ps:귀찮네)" />
-    <option name="LAST_COMMIT_MESSAGE" value="modal팝업창 초초초초초안(ps:귀찮네)" />
+    <MESSAGE value="modal팝업창 초안(ps:모달어렵네) 이제 서버 구현하자" />
+    <option name="LAST_COMMIT_MESSAGE" value="modal팝업창 초안(ps:모달어렵네) 이제 서버 구현하자" />
   </component>
 </project>
